@@ -13,13 +13,13 @@ const Footer = () => {
         <div className="f-content">
             <span>shukla.suraj4dev@gmail.com</span>
             <div className="f-icons">
-                <a href="">
+                <a href="https://instagram.com">
                     <Insta color='white' size='3rem'/>
                 </a>
-                <a href="">
+                <a href="https://instagram.com">
                     <Facebook color='white' size='3rem'/>
                 </a>
-                <a href="">
+                <a href="https://instagram.com">
                     <Github color='white' size='3rem'/>
                 </a>
             </div>
