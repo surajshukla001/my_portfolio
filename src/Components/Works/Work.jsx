@@ -8,27 +8,31 @@ import Facebook from '../../img/Facebook.png'
 import { themeContext } from '../../Context'
 import { useContext } from "react";
 import {motion} from 'framer-motion'
+import {Link} from 'react-scroll'
+
 
 const Work = () => {
     const theme =useContext(themeContext);
     const darkMode = theme.state.darkMode; 
     
   return (
-    <div className="works">
+    <div className="works" id="works">
         {/* {left side} */}
         <div className="awesome">
             <span style={{color: darkMode? 'white': ''}}>Works for All these</span>
             <span>Brands & Clients</span>
             <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit,
+                Freelancer.com,
                 <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing
+                Amazon,
                 <br />
-                Lorem ipsum dolor sit amet.
+                Fiverr,
                 <br />
-                Lorem ipsum dolor sit amet consectetur.
+                UpWork
             </span>
+            <Link to="contact" smooth={true} spy={true}>
                 <button className="button s-button">Hire me</button>
+            </Link>
             <div className="blur s-blur1" style={{background: "#abf1ff94"}}></div>
         </div>
 

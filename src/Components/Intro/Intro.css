@@ -15,6 +15,7 @@
 .i-name{
     display: flex;
     flex-direction: column;
+    gap: 0.25rem;
 }
 
 .i-name>:nth-child(1){
@@ -31,7 +32,7 @@
 
 .i-name>:nth-child(3){
     font-weight: 100;
-    font-size: 14px;
+    font-size: 18px;
     color: var(--gray);
     margin-top: 10px;
 }
@@ -83,7 +84,7 @@
 }
 
 .i-right>:nth-child(4){
-    transform: scale(0.6);
+    transform: scale(0.62);
     top: -19%;
     left: -24%;
     border-radius: 50%;

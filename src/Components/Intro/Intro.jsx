@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-scroll'
 import './Intro.css'
 import Github from '../../img/github.png'
 import Linkedin from '../../img/linkedin.png'
@@ -28,12 +29,14 @@ const Intro = () => {
                 <span>Suraj Shukla</span>
                 <span>Frontend Developer with high level of experience in web designing and development, producing the QUALITY Work</span>
             </div>
-            <button className="i-button button">Hire me</button>
+            <Link to="contact" smooth={true} spy={true}>
+                <button className="i-button button">Hire me</button>
+            </Link>
             <div className="i-icons">
-                <a href="https://github.com">
+                <a href="https://github.com/surajshukla001">
                     <img src={Github} alt="" />
                 </a>
-                <a href="https://linkedin.com">
+                <a href="https://linkedin.com/in/suraj-shukla-192b9b201">
                     <img src={Linkedin} alt="" />
                 </a>
                 <a href="https://instagram.com">
@@ -55,7 +58,6 @@ const Intro = () => {
             initial={{top: '-4%', left: '74%'}}
             whileInView={{left: '68%'}}
             transition={transition}
-            style={{top: '-4%', left: '68%'}}
             className='floating-div'
             >
                 <FloatingDiv image={Crown} txt1='Web' txt2='Developer' />
@@ -65,7 +67,7 @@ const Intro = () => {
             initial={{top: '18rem', left: '9rem'}}
             whileInView={{left: '0rem'}}
             transition={transition}
-             style={{top: '18rem', left: '0rem'}}>
+            >
                 <FloatingDiv image={thumbup} txt1='Best Design' txt2='Award'/>
             </motion.div>
             {/* {Blur Div} */}

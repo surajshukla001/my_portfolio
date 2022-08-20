@@ -13,18 +13,26 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_lcz44rx', 'template_l6uuzyi', form.current, 'MfpVD-hbN2Ixq6EAZ')
-        .then((result) => {
+        emailjs
+        .sendForm(
+            'service_lcz44rx',
+            'template_l6uuzyi', 
+            form.current, 
+            'MfpVD-hbN2Ixq6EAZ'
+            )
+        .then(
+            (result) => {
             console.log(result.text);
             setDone(true);
-        }, (error) => {
+        }, 
+        (error) => {
             console.log(error.text);
         });
     };    
 
 
   return (
-    <div className="contact-form">
+    <div className="contact-form" id="contact">
         <div className="w-left">
             <div className="awesome">
                 <span style={{color: darkMode? 'white': ''}}>Get in touch</span>
